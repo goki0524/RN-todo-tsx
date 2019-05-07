@@ -1,11 +1,15 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Hello from "./Hello"
 
-export default class App extends React.Component {
+type Props = {};
+
+export default class App extends React.Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
+        <Text>My Expo + TypeScript App!</Text>
+        <Hello name="Expo" enthusiasmLevel={10} />
       </View>
     );
   }
